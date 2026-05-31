@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS variables data types</title>
+</head>
+<body>
+    <script>
+        // primitive data types : string , number, boolean, null , undefined , symbol
+        // non- primitive data types: object , array , function
+        var name ="ABES"; //string
+        console.log(name);
+        console.log(typeof(name));
+
+        var num = 37387 //number
+        console.log(num);
+        console.log(typeof(num));
+
+        let coursedone=true;//boolean
+        console.log(coursedone);
+        console.log(typeof(coursedone));
+
+        let add=null;//null
+        console.log(add);
+        console.log(typeof(add));
+
+        let email;//undefined
+        console.log(email);
+        console.log(typeof(email));
+
+        //bigint
+        let bigamount =BigInt(123233657576868);
+        console.log(bigamount);
+        console.log(typeof(bigamount));
+
+        //symbol - a unique primitive identifier
+        //The js  ES6 introduced a new primitive 
+        let val1=Symbol('hello');
+        let val2=Symbol('hello');
+        console.log(val1 == val2);//false
+        console.log(typeof(val1));
+
+        //Refernce or Non- Primitive == defined in pair i.e. key and value or property of value
+        //object() , function {} , and array 
+        let myinfo={
+               name:"Anshika",
+                mob:3274836434 ,
+                isMarried:false ,
+                email:"anshika3222@gmail.com",
+               address:null
+             }
+             //access object's keys
+             console.log(myinfo);
+             console.log(myinfo.email);
+
+             //function
+             function hello(){
+                let myName="ABES";
+                console.log(myName);
+                console.log(typeof(hello));
+            }
+             hello();
+
+             //array
+             let students= ["name1"," name2", "name3"];
+             console.log(students[0]);
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

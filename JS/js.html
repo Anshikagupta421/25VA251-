@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Events Example</title>
+    <style>
+        /* #para {
+            display: none,
+            background color:lightblue,
+        } */
+    </style>
+</head>
+<body>
+
+<button onclick="showPara()">Click to Show Paragraph</button>
+
+<p id="para" onmouseover="changeColor()" onmouseout="resetColor()">
+    This is a hidden paragraph. Hover over me!
+</p>
+
+<script>
+    function showPara() {
+        document.getElementById("para").style.display = "block";
+    }
+
+    function changeColor() {
+        document.getElementById("para").style.color = "red";
+    }
+
+    function resetColor() {
+        document.getElementById("para").style.color = "black";
+    }
+</script>
+
+</body>
+</html>e
